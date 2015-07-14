@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5FD21DBF-CBF7-4FD1-A027-CCC01EFA0B07}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Ad.Model</RootNamespace>
+    <AssemblyName>Ad.Model</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\dll\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\dll\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BModel\DoctorDiagnosisCost.cs" />
+    <Compile Include="BModel\Income.cs" />
+    <Compile Include="BModel\Item.cs" />
+    <Compile Include="BModel\ItemPay.cs" />
+    <Compile Include="BModel\ItemPrices.cs" />
+    <Compile Include="BModel\ItemSub.cs" />
+    <Compile Include="BModel\Visit.gen.cs" />
+    <Compile Include="DbModel\Config.cs" />
+    <Compile Include="DbModel\CTP_ENUM_ITEM.gen.cs" />
+    <Compile Include="DbModel\CTP_ENUM_ITEM_Description.gen.cs" />
+    <Compile Include="DbModel\ORG_MEMBER.gen.cs" />
+    <Compile Include="DbModel\ORG_MEMBER_Description.gen.cs" />
+    <Compile Include="DbModel\ORG_UNIT.gen.cs" />
+    <Compile Include="DbModel\ORG_UNIT_Description.gen.cs" />
+    <Compile Include="DbModel\V_Visit.gen.cs" />
+    <Compile Include="DbModel\V_Visit_Description.gen.cs" />
+    <Compile Include="DbModel\Y_Call_Cust.cs" />
+    <Compile Include="DbModel\Y_Call_Cust.gen.cs" />
+    <Compile Include="DbModel\Y_Call_Cust_Description.gen.cs" />
+    <Compile Include="DbModel\Y_Call_Log.gen.cs" />
+    <Compile Include="DbModel\Y_Call_Log_Description.gen.cs" />
+    <Compile Include="DbModel\Y_Department.cs" />
+    <Compile Include="DbModel\Y_Department.gen.cs" />
+    <Compile Include="DbModel\Y_Department_Description.gen.cs" />
+    <Compile Include="DbModel\Y_Dept_Position.gen.cs" />
+    <Compile Include="DbModel\Y_Dept_Position_Description.gen.cs" />
+    <Compile Include="DbModel\Y_Function.gen.cs" />
+    <Compile Include="DbModel\Y_Function_Description.gen.cs" />
+    <Compile Include="DbModel\Y_Generate_Key.gen.cs" />
+    <Compile Include="DbModel\Y_Generate_Key_Description.gen.cs" />
+    <Compile Include="DbModel\Y_KnowledgeBase.gen.cs" />
+    <Compile Include="DbModel\Y_KnowledgeBaseChanges.gen.cs" />
+    <Compile Include="DbModel\Y_KnowledgeBaseChanges_Description.gen.cs" />
+    <Compile Include="DbModel\Y_KnowledgeBase_Description.gen.cs" />
+    <Compile Include="DbModel\Y_Manager.gen.cs" />
+    <Compile Include="DbModel\Y_Manager_Description.gen.cs" />
+    <Compile Include="DbModel\Y_Operation.gen.cs" />
+    <Compile Include="DbModel\Y_Operation_Description.gen.cs" />
+    <Compile Include="DbModel\Y_Position.cs" />
+    <Compile Include="DbModel\Y_Position.gen.cs" />
+    <Compile Include="DbModel\Y_Position_Description.gen.cs" />
+    <Compile Include="DbModel\Y_Operation.cs" />
+    <Compile Include="DbModel\Y_Post_Privilege.gen.cs" />
+    <Compile Include="DbModel\Y_Post_Privilege_Description.gen.cs" />
+    <Compile Include="DbModel\Y_User_Info.cs" />
+    <Compile Include="DbModel\Y_User_Info.gen.cs" />
+    <Compile Include="DbModel\Y_User_Info_Description.gen.cs" />
+    <Compile Include="DbModel\Y_V_Manager.gen.cs" />
+    <Compile Include="DbModel\Y_V_Manager_Description.gen.cs" />
+    <Compile Include="DbModel\Y_V_ORG_MEMBER.gen.cs" />
+    <Compile Include="DbModel\Y_V_ORG_MEMBER_Description.gen.cs" />
+    <Compile Include="KeyTypeEnum.cs" />
+    <Compile Include="PreValueType.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StaticConst.cs" />
+    <Compile Include="VModel\VCallCust.cs" />
+    <Compile Include="VModel\VManagerPwd.cs" />
+    <Compile Include="VModel\VManagerSel.cs" />
+    <Compile Include="VModel\VModel_AccountIncome.cs" />
+    <Compile Include="VModel\VM_KnowledgeBase.cs" />
+    <Compile Include="ZeroTypeEnum.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Ad.Tools\Ad.Tools.csproj">
+      <Project>{abc6efe2-3804-4e8f-a8d5-61a7951710d8}</Project>
+      <Name>Ad.Tools</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

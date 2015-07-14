@@ -1,0 +1,422 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D18B07EC-25B9-4C06-B54D-C232907371B6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FormUI</RootNamespace>
+    <AssemblyName>FormUI</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>..\dll\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FBombScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FBombScreen.Designer.cs">
+      <DependentUpon>FBombScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FCallModule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FCallModule.Designer.cs">
+      <DependentUpon>FCallModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FCustAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FCustAdd.Designer.cs">
+      <DependentUpon>FCustAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FCustomerImpInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FCustomerImpInfo.Designer.cs">
+      <DependentUpon>FCustomerImpInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FDepartmentAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FDepartmentAdd.Designer.cs">
+      <DependentUpon>FDepartmentAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FDepartmentEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FDepartmentEdit.Designer.cs">
+      <DependentUpon>FDepartmentEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FDeptPosition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FDeptPosition.Designer.cs">
+      <DependentUpon>FDeptPosition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FKnowledgeAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FKnowledgeAdd.Designer.cs">
+      <DependentUpon>FKnowledgeAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FKnowledgeEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FKnowledgeEdit.Designer.cs">
+      <DependentUpon>FKnowledgeEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLogin.Designer.cs">
+      <DependentUpon>FLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FMain.Designer.cs">
+      <DependentUpon>FMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FManagerAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FManagerAdd.Designer.cs">
+      <DependentUpon>FManagerAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FManagerChoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FManagerChoice.Designer.cs">
+      <DependentUpon>FManagerChoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FManagerEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FManagerEdit.Designer.cs">
+      <DependentUpon>FManagerEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FPosiFuncOper.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FPosiFuncOper.Designer.cs">
+      <DependentUpon>FPosiFuncOper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FPositionAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FPositionAdd.Designer.cs">
+      <DependentUpon>FPositionAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FPositionEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FPositionEdit.Designer.cs">
+      <DependentUpon>FPositionEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FProgessBar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FProgessBar.Designer.cs">
+      <DependentUpon>FProgessBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FPwdChange.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FPwdChange.Designer.cs">
+      <DependentUpon>FPwdChange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Plug\PicWithTitle.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Plug\PicWithTitle.Designer.cs">
+      <DependentUpon>PicWithTitle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Plug\SplitPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Plug\SplitPage.Designer.cs">
+      <DependentUpon>SplitPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Plug\TelephoneControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Plug\TelephoneControl.Designer.cs">
+      <DependentUpon>TelephoneControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tool\AnswerHelper.cs" />
+    <Compile Include="Tool\CommonClass.cs" />
+    <Compile Include="Tool\DelegateHelper.cs" />
+    <Compile Include="Tool\DeptNodeHelper.cs" />
+    <Compile Include="Tool\EnumHelper.cs" />
+    <Compile Include="Tool\LoginHelper.cs" />
+    <Compile Include="Tool\SexHelper.cs" />
+    <Compile Include="Tool\StaticStateHelper.cs" />
+    <Compile Include="Tool\UserChannel.cs" />
+    <EmbeddedResource Include="FBombScreen.resx">
+      <DependentUpon>FBombScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FCallModule.resx">
+      <DependentUpon>FCallModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FCustAdd.resx">
+      <DependentUpon>FCustAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FCustomerImpInfo.resx">
+      <DependentUpon>FCustomerImpInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FDepartmentAdd.resx">
+      <DependentUpon>FDepartmentAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FDepartmentEdit.resx">
+      <DependentUpon>FDepartmentEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FDeptPosition.resx">
+      <DependentUpon>FDeptPosition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FKnowledgeAdd.resx">
+      <DependentUpon>FKnowledgeAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FKnowledgeEdit.resx">
+      <DependentUpon>FKnowledgeEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLogin.resx">
+      <DependentUpon>FLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FMain.resx">
+      <DependentUpon>FMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FManagerAdd.resx">
+      <DependentUpon>FManagerAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FManagerChoice.resx">
+      <DependentUpon>FManagerChoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FManagerEdit.resx">
+      <DependentUpon>FManagerEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FPosiFuncOper.resx">
+      <DependentUpon>FPosiFuncOper.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FPositionAdd.resx">
+      <DependentUpon>FPositionAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FPositionEdit.resx">
+      <DependentUpon>FPositionEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FProgessBar.resx">
+      <DependentUpon>FProgessBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FPwdChange.resx">
+      <DependentUpon>FPwdChange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Plug\PicWithTitle.resx">
+      <DependentUpon>PicWithTitle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Plug\SplitPage.resx">
+      <DependentUpon>SplitPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Plug\TelephoneControl.resx">
+      <DependentUpon>TelephoneControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loginIco.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\answer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bgImg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\call.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\import.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\knowledgeBase.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\defaul.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\standby.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\talking.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\standby48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\standby88.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\talking48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\talking75.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\belling74.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Ad.Fw\Ad.Fw.csproj">
+      <Project>{8c2cb3d8-b008-4790-afc5-1e4e3dbdb3a8}</Project>
+      <Name>Ad.Fw</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Ad.Model\Ad.Model.csproj">
+      <Project>{5fd21dbf-cbf7-4fd1-a027-ccc01efa0b07}</Project>
+      <Name>Ad.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Ad.Tools\Ad.Tools.csproj">
+      <Project>{abc6efe2-3804-4e8f-a8d5-61a7951710d8}</Project>
+      <Name>Ad.Tools</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shut.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\department.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\employee.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\operation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\function.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\job.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pwd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxwpCTIOcx">
+      <Guid>{80BD41F0-DE12-4BCD-9FCD-C33F039FD035}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>12</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="wpCTIOcx">
+      <Guid>{80BD41F0-DE12-4BCD-9FCD-C33F039FD035}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>12</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\other.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\connect.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hurryup.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

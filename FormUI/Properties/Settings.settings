@@ -1,0 +1,18 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="FormUI.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="ImageLocation" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="ImeMode" Type="System.Windows.Forms.ImeMode" Scope="User">
+      <Value Profile="(Default)">Disable</Value>
+    </Setting>
+    <Setting Name="Text" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Label</Value>
+    </Setting>
+    <Setting Name="UserLabelText" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Label</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
