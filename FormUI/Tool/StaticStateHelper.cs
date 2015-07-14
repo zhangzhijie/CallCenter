@@ -12,6 +12,8 @@ namespace FormUI.Tool
 
         public static bool? IsInitAnswer { get; set; }
 
+        public static bool? IsInitCall { get; set; }
+
         public static bool? IsInitSearch { get; set; }
 
         public static bool? IsInitFuction { get; set; }

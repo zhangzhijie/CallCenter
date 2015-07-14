@@ -129,20 +129,17 @@ namespace FormUI.Tool
 
         public enum SelfContextMenuEnum
         {
-            [Description("接听")]
-            Answer = 0,
-
             [Description("置忙")]
-            Busy = 1,
+            Busy = 0,
 
             [Description("置闲")]
-            Idle = 2,
+            Idle = 1,
 
             [Description("通话详细")]
-            Details = 3,
+            Details = 2,
 
             [Description("注销")]
-            Logout = 4,
+            Logout = 3,
         }
 
         public enum OtherContextMenuEnum

@@ -56,12 +56,6 @@
     <Compile Include="FBombScreen.Designer.cs">
       <DependentUpon>FBombScreen.cs</DependentUpon>
     </Compile>
-    <Compile Include="FCallModule.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FCallModule.Designer.cs">
-      <DependentUpon>FCallModule.cs</DependentUpon>
-    </Compile>
     <Compile Include="FCustAdd.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -195,9 +189,6 @@
     <Compile Include="Tool\UserChannel.cs" />
     <EmbeddedResource Include="FBombScreen.resx">
       <DependentUpon>FBombScreen.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FCallModule.resx">
-      <DependentUpon>FCallModule.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FCustAdd.resx">
       <DependentUpon>FCustAdd.cs</DependentUpon>

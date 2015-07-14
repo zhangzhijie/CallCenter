@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FMain));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
@@ -43,24 +43,59 @@
             this.flpAnswer = new System.Windows.Forms.FlowLayoutPanel();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.pnlCall = new System.Windows.Forms.Panel();
-            this.pnlCallFill = new System.Windows.Forms.Panel();
-            this.pnlCallTop = new System.Windows.Forms.Panel();
-            this.btnCallAdd = new System.Windows.Forms.Button();
-            this.btnCallSearch = new System.Windows.Forms.Button();
-            this.btnCallPlan = new System.Windows.Forms.Button();
-            this.dtpCallTime2 = new System.Windows.Forms.DateTimePicker();
-            this.lblCallTime2 = new System.Windows.Forms.Label();
-            this.dtpCallTime1 = new System.Windows.Forms.DateTimePicker();
-            this.lblCallTime1 = new System.Windows.Forms.Label();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.dtpCallEntryDate = new System.Windows.Forms.DateTimePicker();
+            this.lblCallError = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
+            this.rtbCallContent = new System.Windows.Forms.RichTextBox();
+            this.cmbCallProvice = new System.Windows.Forms.ComboBox();
+            this.cmbCallSource = new System.Windows.Forms.ComboBox();
+            this.cmbCallSex = new System.Windows.Forms.ComboBox();
+            this.cmbCallArea = new System.Windows.Forms.ComboBox();
+            this.txtCallCustName = new System.Windows.Forms.TextBox();
+            this.label31 = new System.Windows.Forms.Label();
+            this.label32 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
+            this.txtCallJob = new System.Windows.Forms.TextBox();
+            this.txtCallProduce = new System.Windows.Forms.TextBox();
+            this.txtCallEmail = new System.Windows.Forms.TextBox();
             this.txtCallPhone = new System.Windows.Forms.TextBox();
-            this.lblCallPhone = new System.Windows.Forms.Label();
-            this.dgvCall = new System.Windows.Forms.DataGridView();
-            this.电话号码 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.呼叫时间 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.客户姓名 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.呼叫主题 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.内容备注 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.是否通话成功 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label34 = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
+            this.label36 = new System.Windows.Forms.Label();
+            this.label37 = new System.Windows.Forms.Label();
+            this.label38 = new System.Windows.Forms.Label();
+            this.label39 = new System.Windows.Forms.Label();
+            this.label41 = new System.Windows.Forms.Label();
+            this.label42 = new System.Windows.Forms.Label();
+            this.btnClearDetail = new System.Windows.Forms.Button();
+            this.btnCallDetailSave = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.rtbCallRemark = new System.Windows.Forms.RichTextBox();
+            this.btn11 = new System.Windows.Forms.Button();
+            this.btn7 = new System.Windows.Forms.Button();
+            this.btn3 = new System.Windows.Forms.Button();
+            this.btn10 = new System.Windows.Forms.Button();
+            this.btn6 = new System.Windows.Forms.Button();
+            this.btn9 = new System.Windows.Forms.Button();
+            this.btn2 = new System.Windows.Forms.Button();
+            this.btn5 = new System.Windows.Forms.Button();
+            this.btn8 = new System.Windows.Forms.Button();
+            this.btn1 = new System.Windows.Forms.Button();
+            this.btn4 = new System.Windows.Forms.Button();
+            this.btn0 = new System.Windows.Forms.Button();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.lblCallDailError = new System.Windows.Forms.Label();
+            this.btnCallDail = new System.Windows.Forms.Button();
+            this.txtCallDailPhone = new System.Windows.Forms.TextBox();
+            this.label21 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.pnlCustomer = new System.Windows.Forms.Panel();
             this.pnlCusFill = new System.Windows.Forms.Panel();
@@ -118,6 +153,7 @@
             this.pnlSearchTop = new System.Windows.Forms.Panel();
             this.dtpSchDate2 = new System.Windows.Forms.DateTimePicker();
             this.dtpSchDate1 = new System.Windows.Forms.DateTimePicker();
+            this.btnSearchAdd = new System.Windows.Forms.Button();
             this.btnSearchbtn = new System.Windows.Forms.Button();
             this.cmbSchProvince = new System.Windows.Forms.ComboBox();
             this.cmbSchSex = new System.Windows.Forms.ComboBox();
@@ -261,7 +297,7 @@
             this.cmsOther = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.cmsSelf = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.axCTISrv = new AxwpCTIOcx.AxCTISrv();
-            this.btnSearchAdd = new System.Windows.Forms.Button();
+            this.label22 = new System.Windows.Forms.Label();
             this.picWithTitle1 = new FormUI.Plug.PicWithTitle();
             this.picWithTitle2 = new FormUI.Plug.PicWithTitle();
             this.picWithTitle3 = new FormUI.Plug.PicWithTitle();
@@ -284,9 +320,9 @@
             this.panel10.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.pnlCall.SuspendLayout();
-            this.pnlCallFill.SuspendLayout();
-            this.pnlCallTop.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvCall)).BeginInit();
+            this.panel12.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.panel11.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.pnlCustomer.SuspendLayout();
             this.pnlCusFill.SuspendLayout();
@@ -478,180 +514,551 @@
             // pnlCall
             // 
             this.pnlCall.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pnlCall.Controls.Add(this.pnlCallFill);
+            this.pnlCall.Controls.Add(this.panel12);
+            this.pnlCall.Controls.Add(this.panel1);
             this.pnlCall.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlCall.Location = new System.Drawing.Point(3, 3);
             this.pnlCall.Name = "pnlCall";
             this.pnlCall.Size = new System.Drawing.Size(901, 725);
             this.pnlCall.TabIndex = 1;
             // 
-            // pnlCallFill
+            // panel12
             // 
-            this.pnlCallFill.Controls.Add(this.pnlCallTop);
-            this.pnlCallFill.Controls.Add(this.dgvCall);
-            this.pnlCallFill.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlCallFill.Location = new System.Drawing.Point(0, 0);
-            this.pnlCallFill.Name = "pnlCallFill";
-            this.pnlCallFill.Size = new System.Drawing.Size(897, 721);
-            this.pnlCallFill.TabIndex = 2;
+            this.panel12.Controls.Add(this.dtpCallEntryDate);
+            this.panel12.Controls.Add(this.lblCallError);
+            this.panel12.Controls.Add(this.label23);
+            this.panel12.Controls.Add(this.label24);
+            this.panel12.Controls.Add(this.label25);
+            this.panel12.Controls.Add(this.label22);
+            this.panel12.Controls.Add(this.label26);
+            this.panel12.Controls.Add(this.label27);
+            this.panel12.Controls.Add(this.label28);
+            this.panel12.Controls.Add(this.label29);
+            this.panel12.Controls.Add(this.label30);
+            this.panel12.Controls.Add(this.rtbCallContent);
+            this.panel12.Controls.Add(this.cmbCallProvice);
+            this.panel12.Controls.Add(this.cmbCallSource);
+            this.panel12.Controls.Add(this.cmbCallSex);
+            this.panel12.Controls.Add(this.cmbCallArea);
+            this.panel12.Controls.Add(this.txtCallCustName);
+            this.panel12.Controls.Add(this.label31);
+            this.panel12.Controls.Add(this.label32);
+            this.panel12.Controls.Add(this.label33);
+            this.panel12.Controls.Add(this.txtCallJob);
+            this.panel12.Controls.Add(this.txtCallProduce);
+            this.panel12.Controls.Add(this.txtCallEmail);
+            this.panel12.Controls.Add(this.txtCallPhone);
+            this.panel12.Controls.Add(this.label34);
+            this.panel12.Controls.Add(this.label35);
+            this.panel12.Controls.Add(this.label36);
+            this.panel12.Controls.Add(this.label37);
+            this.panel12.Controls.Add(this.label38);
+            this.panel12.Controls.Add(this.label39);
+            this.panel12.Controls.Add(this.label41);
+            this.panel12.Controls.Add(this.label42);
+            this.panel12.Controls.Add(this.btnClearDetail);
+            this.panel12.Controls.Add(this.btnCallDetailSave);
+            this.panel12.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel12.Location = new System.Drawing.Point(246, 0);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(651, 721);
+            this.panel12.TabIndex = 2;
             // 
-            // pnlCallTop
+            // dtpCallEntryDate
             // 
-            this.pnlCallTop.Controls.Add(this.btnCallAdd);
-            this.pnlCallTop.Controls.Add(this.btnCallSearch);
-            this.pnlCallTop.Controls.Add(this.btnCallPlan);
-            this.pnlCallTop.Controls.Add(this.dtpCallTime2);
-            this.pnlCallTop.Controls.Add(this.lblCallTime2);
-            this.pnlCallTop.Controls.Add(this.dtpCallTime1);
-            this.pnlCallTop.Controls.Add(this.lblCallTime1);
-            this.pnlCallTop.Controls.Add(this.txtCallPhone);
-            this.pnlCallTop.Controls.Add(this.lblCallPhone);
-            this.pnlCallTop.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlCallTop.Location = new System.Drawing.Point(0, 0);
-            this.pnlCallTop.Name = "pnlCallTop";
-            this.pnlCallTop.Size = new System.Drawing.Size(897, 42);
-            this.pnlCallTop.TabIndex = 1;
+            this.dtpCallEntryDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpCallEntryDate.Location = new System.Drawing.Point(384, 58);
+            this.dtpCallEntryDate.Name = "dtpCallEntryDate";
+            this.dtpCallEntryDate.Size = new System.Drawing.Size(139, 21);
+            this.dtpCallEntryDate.TabIndex = 75;
             // 
-            // btnCallAdd
+            // lblCallError
             // 
-            this.btnCallAdd.ForeColor = System.Drawing.Color.Black;
-            this.btnCallAdd.Location = new System.Drawing.Point(778, 8);
-            this.btnCallAdd.Name = "btnCallAdd";
-            this.btnCallAdd.Size = new System.Drawing.Size(63, 23);
-            this.btnCallAdd.TabIndex = 3;
-            this.btnCallAdd.Text = "创建呼叫";
-            this.btnCallAdd.UseVisualStyleBackColor = true;
-            this.btnCallAdd.Click += new System.EventHandler(this.btnCallAdd_Click);
+            this.lblCallError.ForeColor = System.Drawing.Color.Red;
+            this.lblCallError.Location = new System.Drawing.Point(133, 387);
+            this.lblCallError.Name = "lblCallError";
+            this.lblCallError.Size = new System.Drawing.Size(380, 48);
+            this.lblCallError.TabIndex = 104;
+            this.lblCallError.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // btnCallSearch
+            // label23
             // 
-            this.btnCallSearch.ForeColor = System.Drawing.Color.Black;
-            this.btnCallSearch.Location = new System.Drawing.Point(489, 7);
-            this.btnCallSearch.Name = "btnCallSearch";
-            this.btnCallSearch.Size = new System.Drawing.Size(57, 23);
-            this.btnCallSearch.TabIndex = 3;
-            this.btnCallSearch.Text = "查询";
-            this.btnCallSearch.UseVisualStyleBackColor = true;
+            this.label23.AutoSize = true;
+            this.label23.ForeColor = System.Drawing.Color.Red;
+            this.label23.Location = new System.Drawing.Point(529, 350);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(11, 12);
+            this.label23.TabIndex = 103;
+            this.label23.Text = "*";
             // 
-            // btnCallPlan
+            // label24
             // 
-            this.btnCallPlan.ForeColor = System.Drawing.Color.Black;
-            this.btnCallPlan.Location = new System.Drawing.Point(686, 7);
-            this.btnCallPlan.Name = "btnCallPlan";
-            this.btnCallPlan.Size = new System.Drawing.Size(77, 23);
-            this.btnCallPlan.TabIndex = 3;
-            this.btnCallPlan.Text = "制定计划";
-            this.btnCallPlan.UseVisualStyleBackColor = true;
+            this.label24.AutoSize = true;
+            this.label24.ForeColor = System.Drawing.Color.Red;
+            this.label24.Location = new System.Drawing.Point(529, 224);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(11, 12);
+            this.label24.TabIndex = 102;
+            this.label24.Text = "*";
             // 
-            // dtpCallTime2
+            // label25
             // 
-            this.dtpCallTime2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpCallTime2.Location = new System.Drawing.Point(367, 9);
-            this.dtpCallTime2.Name = "dtpCallTime2";
-            this.dtpCallTime2.Size = new System.Drawing.Size(101, 21);
-            this.dtpCallTime2.TabIndex = 2;
+            this.label25.AutoSize = true;
+            this.label25.ForeColor = System.Drawing.Color.Red;
+            this.label25.Location = new System.Drawing.Point(262, 148);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(11, 12);
+            this.label25.TabIndex = 101;
+            this.label25.Text = "*";
             // 
-            // lblCallTime2
+            // label26
             // 
-            this.lblCallTime2.AutoSize = true;
-            this.lblCallTime2.ForeColor = System.Drawing.Color.Black;
-            this.lblCallTime2.Location = new System.Drawing.Point(325, 14);
-            this.lblCallTime2.Name = "lblCallTime2";
-            this.lblCallTime2.Size = new System.Drawing.Size(41, 12);
-            this.lblCallTime2.TabIndex = 0;
-            this.lblCallTime2.Text = "时间<=";
+            this.label26.AutoSize = true;
+            this.label26.ForeColor = System.Drawing.Color.Red;
+            this.label26.Location = new System.Drawing.Point(262, 110);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(11, 12);
+            this.label26.TabIndex = 100;
+            this.label26.Text = "*";
             // 
-            // dtpCallTime1
+            // label27
             // 
-            this.dtpCallTime1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpCallTime1.Location = new System.Drawing.Point(206, 9);
-            this.dtpCallTime1.Name = "dtpCallTime1";
-            this.dtpCallTime1.Size = new System.Drawing.Size(101, 21);
-            this.dtpCallTime1.TabIndex = 2;
+            this.label27.AutoSize = true;
+            this.label27.ForeColor = System.Drawing.Color.Red;
+            this.label27.Location = new System.Drawing.Point(529, 142);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(11, 12);
+            this.label27.TabIndex = 99;
+            this.label27.Text = "*";
             // 
-            // lblCallTime1
+            // label28
             // 
-            this.lblCallTime1.AutoSize = true;
-            this.lblCallTime1.ForeColor = System.Drawing.Color.Black;
-            this.lblCallTime1.Location = new System.Drawing.Point(164, 14);
-            this.lblCallTime1.Name = "lblCallTime1";
-            this.lblCallTime1.Size = new System.Drawing.Size(41, 12);
-            this.lblCallTime1.TabIndex = 0;
-            this.lblCallTime1.Text = "时间>=";
+            this.label28.AutoSize = true;
+            this.label28.ForeColor = System.Drawing.Color.Red;
+            this.label28.Location = new System.Drawing.Point(529, 101);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(11, 12);
+            this.label28.TabIndex = 98;
+            this.label28.Text = "*";
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.ForeColor = System.Drawing.Color.Red;
+            this.label29.Location = new System.Drawing.Point(529, 66);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(11, 12);
+            this.label29.TabIndex = 97;
+            this.label29.Text = "*";
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.ForeColor = System.Drawing.Color.Red;
+            this.label30.Location = new System.Drawing.Point(529, 28);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(11, 12);
+            this.label30.TabIndex = 96;
+            this.label30.Text = "*";
+            // 
+            // rtbCallContent
+            // 
+            this.rtbCallContent.Location = new System.Drawing.Point(114, 266);
+            this.rtbCallContent.Name = "rtbCallContent";
+            this.rtbCallContent.Size = new System.Drawing.Size(409, 96);
+            this.rtbCallContent.TabIndex = 86;
+            this.rtbCallContent.Text = "";
+            // 
+            // cmbCallProvice
+            // 
+            this.cmbCallProvice.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbCallProvice.FormattingEnabled = true;
+            this.cmbCallProvice.Location = new System.Drawing.Point(384, 96);
+            this.cmbCallProvice.Name = "cmbCallProvice";
+            this.cmbCallProvice.Size = new System.Drawing.Size(139, 20);
+            this.cmbCallProvice.TabIndex = 77;
+            // 
+            // cmbCallSource
+            // 
+            this.cmbCallSource.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbCallSource.FormattingEnabled = true;
+            this.cmbCallSource.Location = new System.Drawing.Point(384, 137);
+            this.cmbCallSource.Name = "cmbCallSource";
+            this.cmbCallSource.Size = new System.Drawing.Size(139, 20);
+            this.cmbCallSource.TabIndex = 79;
+            // 
+            // cmbCallSex
+            // 
+            this.cmbCallSex.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbCallSex.FormattingEnabled = true;
+            this.cmbCallSex.Location = new System.Drawing.Point(114, 140);
+            this.cmbCallSex.Name = "cmbCallSex";
+            this.cmbCallSex.Size = new System.Drawing.Size(139, 20);
+            this.cmbCallSex.TabIndex = 78;
+            // 
+            // cmbCallArea
+            // 
+            this.cmbCallArea.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbCallArea.FormattingEnabled = true;
+            this.cmbCallArea.Location = new System.Drawing.Point(114, 99);
+            this.cmbCallArea.Name = "cmbCallArea";
+            this.cmbCallArea.Size = new System.Drawing.Size(139, 20);
+            this.cmbCallArea.TabIndex = 76;
+            this.cmbCallArea.SelectedIndexChanged += new System.EventHandler(this.cmbCallArea_SelectedIndexChanged);
+            // 
+            // txtCallCustName
+            // 
+            this.txtCallCustName.Location = new System.Drawing.Point(384, 23);
+            this.txtCallCustName.Name = "txtCallCustName";
+            this.txtCallCustName.Size = new System.Drawing.Size(139, 21);
+            this.txtCallCustName.TabIndex = 73;
+            // 
+            // label31
+            // 
+            this.label31.Location = new System.Drawing.Point(318, 59);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(60, 23);
+            this.label31.TabIndex = 92;
+            this.label31.Text = "录入时间";
+            this.label31.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label32
+            // 
+            this.label32.Location = new System.Drawing.Point(318, 21);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(60, 23);
+            this.label32.TabIndex = 93;
+            this.label32.Text = "客户姓名";
+            this.label32.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label33
+            // 
+            this.label33.Location = new System.Drawing.Point(318, 137);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(60, 23);
+            this.label33.TabIndex = 91;
+            this.label33.Text = "客户来源";
+            this.label33.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // txtCallJob
+            // 
+            this.txtCallJob.Location = new System.Drawing.Point(114, 181);
+            this.txtCallJob.Name = "txtCallJob";
+            this.txtCallJob.Size = new System.Drawing.Size(409, 21);
+            this.txtCallJob.TabIndex = 83;
+            // 
+            // txtCallProduce
+            // 
+            this.txtCallProduce.Location = new System.Drawing.Point(114, 221);
+            this.txtCallProduce.Name = "txtCallProduce";
+            this.txtCallProduce.Size = new System.Drawing.Size(409, 21);
+            this.txtCallProduce.TabIndex = 85;
+            // 
+            // txtCallEmail
+            // 
+            this.txtCallEmail.Location = new System.Drawing.Point(114, 60);
+            this.txtCallEmail.Name = "txtCallEmail";
+            this.txtCallEmail.Size = new System.Drawing.Size(139, 21);
+            this.txtCallEmail.TabIndex = 81;
             // 
             // txtCallPhone
             // 
-            this.txtCallPhone.Location = new System.Drawing.Point(54, 9);
+            this.txtCallPhone.Location = new System.Drawing.Point(114, 23);
             this.txtCallPhone.Name = "txtCallPhone";
-            this.txtCallPhone.Size = new System.Drawing.Size(95, 21);
-            this.txtCallPhone.TabIndex = 1;
+            this.txtCallPhone.Size = new System.Drawing.Size(139, 21);
+            this.txtCallPhone.TabIndex = 72;
             // 
-            // lblCallPhone
+            // label34
             // 
-            this.lblCallPhone.AutoSize = true;
-            this.lblCallPhone.ForeColor = System.Drawing.Color.Black;
-            this.lblCallPhone.Location = new System.Drawing.Point(10, 13);
-            this.lblCallPhone.Name = "lblCallPhone";
-            this.lblCallPhone.Size = new System.Drawing.Size(41, 12);
-            this.lblCallPhone.TabIndex = 0;
-            this.lblCallPhone.Text = "电话号";
+            this.label34.Location = new System.Drawing.Point(48, 140);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(60, 23);
+            this.label34.TabIndex = 90;
+            this.label34.Text = "性别";
+            this.label34.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // dgvCall
+            // label35
             // 
-            this.dgvCall.AllowUserToAddRows = false;
-            this.dgvCall.AllowUserToDeleteRows = false;
-            this.dgvCall.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvCall.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.电话号码,
-            this.呼叫时间,
-            this.客户姓名,
-            this.呼叫主题,
-            this.内容备注,
-            this.是否通话成功});
-            this.dgvCall.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvCall.Location = new System.Drawing.Point(0, 0);
-            this.dgvCall.Name = "dgvCall";
-            this.dgvCall.ReadOnly = true;
-            this.dgvCall.RowTemplate.Height = 23;
-            this.dgvCall.Size = new System.Drawing.Size(897, 721);
-            this.dgvCall.TabIndex = 0;
+            this.label35.Location = new System.Drawing.Point(48, 179);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(60, 23);
+            this.label35.TabIndex = 89;
+            this.label35.Text = "职位";
+            this.label35.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // 电话号码
+            // label36
             // 
-            this.电话号码.HeaderText = "电话号码";
-            this.电话号码.Name = "电话号码";
-            this.电话号码.ReadOnly = true;
+            this.label36.Location = new System.Drawing.Point(318, 96);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(60, 23);
+            this.label36.TabIndex = 88;
+            this.label36.Text = "地区";
+            this.label36.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // 呼叫时间
+            // label37
             // 
-            this.呼叫时间.HeaderText = "呼叫时间";
-            this.呼叫时间.Name = "呼叫时间";
-            this.呼叫时间.ReadOnly = true;
+            this.label37.Location = new System.Drawing.Point(48, 263);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(60, 23);
+            this.label37.TabIndex = 87;
+            this.label37.Text = "咨询内容";
+            this.label37.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // 客户姓名
+            // label38
             // 
-            this.客户姓名.HeaderText = "客户姓名";
-            this.客户姓名.Name = "客户姓名";
-            this.客户姓名.ReadOnly = true;
+            this.label38.Location = new System.Drawing.Point(48, 219);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(60, 23);
+            this.label38.TabIndex = 84;
+            this.label38.Text = "咨询产品";
+            this.label38.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // 呼叫主题
+            // label39
             // 
-            this.呼叫主题.HeaderText = "呼叫主题";
-            this.呼叫主题.Name = "呼叫主题";
-            this.呼叫主题.ReadOnly = true;
+            this.label39.Location = new System.Drawing.Point(48, 58);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(60, 23);
+            this.label39.TabIndex = 82;
+            this.label39.Text = "邮箱";
+            this.label39.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // 内容备注
+            // label41
             // 
-            this.内容备注.HeaderText = "内容备注";
-            this.内容备注.Name = "内容备注";
-            this.内容备注.ReadOnly = true;
+            this.label41.Location = new System.Drawing.Point(48, 99);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(60, 23);
+            this.label41.TabIndex = 80;
+            this.label41.Text = "所在区域";
+            this.label41.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // 是否通话成功
+            // label42
             // 
-            this.是否通话成功.HeaderText = "是否通话成功";
-            this.是否通话成功.Name = "是否通话成功";
-            this.是否通话成功.ReadOnly = true;
-            this.是否通话成功.Width = 120;
+            this.label42.Location = new System.Drawing.Point(48, 21);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(60, 23);
+            this.label42.TabIndex = 95;
+            this.label42.Text = "拨出电话";
+            this.label42.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // btnClearDetail
+            // 
+            this.btnClearDetail.BackColor = System.Drawing.Color.Red;
+            this.btnClearDetail.Location = new System.Drawing.Point(216, 468);
+            this.btnClearDetail.Name = "btnClearDetail";
+            this.btnClearDetail.Size = new System.Drawing.Size(75, 23);
+            this.btnClearDetail.TabIndex = 71;
+            this.btnClearDetail.Text = "清空";
+            this.btnClearDetail.UseVisualStyleBackColor = false;
+            this.btnClearDetail.Click += new System.EventHandler(this.btnCallClearDetail_Click);
+            // 
+            // btnCallDetailSave
+            // 
+            this.btnCallDetailSave.Location = new System.Drawing.Point(324, 468);
+            this.btnCallDetailSave.Name = "btnCallDetailSave";
+            this.btnCallDetailSave.Size = new System.Drawing.Size(75, 23);
+            this.btnCallDetailSave.TabIndex = 70;
+            this.btnCallDetailSave.Text = "提交";
+            this.btnCallDetailSave.UseVisualStyleBackColor = true;
+            this.btnCallDetailSave.Click += new System.EventHandler(this.btnCallDetailSave_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel1.Controls.Add(this.rtbCallRemark);
+            this.panel1.Controls.Add(this.btn11);
+            this.panel1.Controls.Add(this.btn7);
+            this.panel1.Controls.Add(this.btn3);
+            this.panel1.Controls.Add(this.btn10);
+            this.panel1.Controls.Add(this.btn6);
+            this.panel1.Controls.Add(this.btn9);
+            this.panel1.Controls.Add(this.btn2);
+            this.panel1.Controls.Add(this.btn5);
+            this.panel1.Controls.Add(this.btn8);
+            this.panel1.Controls.Add(this.btn1);
+            this.panel1.Controls.Add(this.btn4);
+            this.panel1.Controls.Add(this.btn0);
+            this.panel1.Controls.Add(this.panel11);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(246, 721);
+            this.panel1.TabIndex = 1;
+            // 
+            // rtbCallRemark
+            // 
+            this.rtbCallRemark.Location = new System.Drawing.Point(13, 224);
+            this.rtbCallRemark.Name = "rtbCallRemark";
+            this.rtbCallRemark.ReadOnly = true;
+            this.rtbCallRemark.Size = new System.Drawing.Size(205, 465);
+            this.rtbCallRemark.TabIndex = 2;
+            this.rtbCallRemark.Text = "";
+            // 
+            // btn11
+            // 
+            this.btn11.Location = new System.Drawing.Point(178, 178);
+            this.btn11.Name = "btn11";
+            this.btn11.Size = new System.Drawing.Size(40, 23);
+            this.btn11.TabIndex = 1;
+            this.btn11.Text = "#";
+            this.btn11.UseVisualStyleBackColor = true;
+            this.btn11.Click += new System.EventHandler(this.btn11_Click);
+            // 
+            // btn7
+            // 
+            this.btn7.Location = new System.Drawing.Point(177, 138);
+            this.btn7.Name = "btn7";
+            this.btn7.Size = new System.Drawing.Size(40, 23);
+            this.btn7.TabIndex = 1;
+            this.btn7.Text = "7";
+            this.btn7.UseVisualStyleBackColor = true;
+            this.btn7.Click += new System.EventHandler(this.btn11_Click);
+            // 
+            // btn3
+            // 
+            this.btn3.Location = new System.Drawing.Point(178, 100);
+            this.btn3.Name = "btn3";
+            this.btn3.Size = new System.Drawing.Size(40, 23);
+            this.btn3.TabIndex = 1;
+            this.btn3.Text = "3";
+            this.btn3.UseVisualStyleBackColor = true;
+            this.btn3.Click += new System.EventHandler(this.btn11_Click);
+            // 
+            // btn10
+            // 
+            this.btn10.Location = new System.Drawing.Point(123, 178);
+            this.btn10.Name = "btn10";
+            this.btn10.Size = new System.Drawing.Size(40, 23);
+            this.btn10.TabIndex = 1;
+            this.btn10.Text = "*";
+            this.btn10.UseVisualStyleBackColor = true;
+            this.btn10.Click += new System.EventHandler(this.btn11_Click);
+            // 
+            // btn6
+            // 
+            this.btn6.Location = new System.Drawing.Point(122, 138);
+            this.btn6.Name = "btn6";
+            this.btn6.Size = new System.Drawing.Size(40, 23);
+            this.btn6.TabIndex = 1;
+            this.btn6.Text = "6";
+            this.btn6.UseVisualStyleBackColor = true;
+            this.btn6.Click += new System.EventHandler(this.btn11_Click);
+            // 
+            // btn9
+            // 
+            this.btn9.Location = new System.Drawing.Point(68, 178);
+            this.btn9.Name = "btn9";
+            this.btn9.Size = new System.Drawing.Size(40, 23);
+            this.btn9.TabIndex = 1;
+            this.btn9.Text = "9";
+            this.btn9.UseVisualStyleBackColor = true;
+            this.btn9.Click += new System.EventHandler(this.btn11_Click);
+            // 
+            // btn2
+            // 
+            this.btn2.Location = new System.Drawing.Point(123, 100);
+            this.btn2.Name = "btn2";
+            this.btn2.Size = new System.Drawing.Size(40, 23);
+            this.btn2.TabIndex = 1;
+            this.btn2.Text = "2";
+            this.btn2.UseVisualStyleBackColor = true;
+            this.btn2.Click += new System.EventHandler(this.btn11_Click);
+            // 
+            // btn5
+            // 
+            this.btn5.Location = new System.Drawing.Point(67, 138);
+            this.btn5.Name = "btn5";
+            this.btn5.Size = new System.Drawing.Size(40, 23);
+            this.btn5.TabIndex = 1;
+            this.btn5.Text = "5";
+            this.btn5.UseVisualStyleBackColor = true;
+            this.btn5.Click += new System.EventHandler(this.btn11_Click);
+            // 
+            // btn8
+            // 
+            this.btn8.Location = new System.Drawing.Point(13, 178);
+            this.btn8.Name = "btn8";
+            this.btn8.Size = new System.Drawing.Size(40, 23);
+            this.btn8.TabIndex = 1;
+            this.btn8.Text = "8";
+            this.btn8.UseVisualStyleBackColor = true;
+            this.btn8.Click += new System.EventHandler(this.btn11_Click);
+            // 
+            // btn1
+            // 
+            this.btn1.Location = new System.Drawing.Point(68, 100);
+            this.btn1.Name = "btn1";
+            this.btn1.Size = new System.Drawing.Size(40, 23);
+            this.btn1.TabIndex = 1;
+            this.btn1.Text = "1";
+            this.btn1.UseVisualStyleBackColor = true;
+            this.btn1.Click += new System.EventHandler(this.btn11_Click);
+            // 
+            // btn4
+            // 
+            this.btn4.Location = new System.Drawing.Point(12, 138);
+            this.btn4.Name = "btn4";
+            this.btn4.Size = new System.Drawing.Size(40, 23);
+            this.btn4.TabIndex = 1;
+            this.btn4.Text = "4";
+            this.btn4.UseVisualStyleBackColor = true;
+            this.btn4.Click += new System.EventHandler(this.btn11_Click);
+            // 
+            // btn0
+            // 
+            this.btn0.Location = new System.Drawing.Point(13, 100);
+            this.btn0.Name = "btn0";
+            this.btn0.Size = new System.Drawing.Size(40, 23);
+            this.btn0.TabIndex = 1;
+            this.btn0.Text = "0";
+            this.btn0.UseVisualStyleBackColor = true;
+            this.btn0.Click += new System.EventHandler(this.btn11_Click);
+            // 
+            // panel11
+            // 
+            this.panel11.Controls.Add(this.lblCallDailError);
+            this.panel11.Controls.Add(this.btnCallDail);
+            this.panel11.Controls.Add(this.txtCallDailPhone);
+            this.panel11.Controls.Add(this.label21);
+            this.panel11.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel11.Location = new System.Drawing.Point(0, 0);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(242, 86);
+            this.panel11.TabIndex = 0;
+            // 
+            // lblCallDailError
+            // 
+            this.lblCallDailError.ForeColor = System.Drawing.Color.Red;
+            this.lblCallDailError.Location = new System.Drawing.Point(12, 47);
+            this.lblCallDailError.Name = "lblCallDailError";
+            this.lblCallDailError.Size = new System.Drawing.Size(206, 32);
+            this.lblCallDailError.TabIndex = 3;
+            this.lblCallDailError.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // btnCallDail
+            // 
+            this.btnCallDail.Location = new System.Drawing.Point(179, 17);
+            this.btnCallDail.Name = "btnCallDail";
+            this.btnCallDail.Size = new System.Drawing.Size(39, 23);
+            this.btnCallDail.TabIndex = 2;
+            this.btnCallDail.Text = "拨号";
+            this.btnCallDail.UseVisualStyleBackColor = true;
+            this.btnCallDail.Click += new System.EventHandler(this.btnDail_Click);
+            // 
+            // txtCallDailPhone
+            // 
+            this.txtCallDailPhone.Location = new System.Drawing.Point(40, 19);
+            this.txtCallDailPhone.Name = "txtCallDailPhone";
+            this.txtCallDailPhone.Size = new System.Drawing.Size(129, 21);
+            this.txtCallDailPhone.TabIndex = 1;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(7, 22);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(29, 12);
+            this.label21.TabIndex = 0;
+            this.label21.Text = "电话";
             // 
             // tabPage3
             // 
@@ -1043,9 +1450,9 @@
             // EntryDate
             // 
             this.EntryDate.DataPropertyName = "EntryDate";
-            dataGridViewCellStyle2.Format = "yyyy-MM-dd";
-            dataGridViewCellStyle2.NullValue = null;
-            this.EntryDate.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.Format = "yyyy-MM-dd";
+            dataGridViewCellStyle1.NullValue = null;
+            this.EntryDate.DefaultCellStyle = dataGridViewCellStyle1;
             this.EntryDate.HeaderText = "录入时间";
             this.EntryDate.Name = "EntryDate";
             this.EntryDate.ReadOnly = true;
@@ -1220,6 +1627,17 @@
             this.dtpSchDate1.Name = "dtpSchDate1";
             this.dtpSchDate1.Size = new System.Drawing.Size(100, 21);
             this.dtpSchDate1.TabIndex = 4;
+            // 
+            // btnSearchAdd
+            // 
+            this.btnSearchAdd.ForeColor = System.Drawing.Color.Black;
+            this.btnSearchAdd.Location = new System.Drawing.Point(786, 74);
+            this.btnSearchAdd.Name = "btnSearchAdd";
+            this.btnSearchAdd.Size = new System.Drawing.Size(70, 23);
+            this.btnSearchAdd.TabIndex = 3;
+            this.btnSearchAdd.Text = "添加";
+            this.btnSearchAdd.UseVisualStyleBackColor = true;
+            this.btnSearchAdd.Click += new System.EventHandler(this.btnSearchAdd_Click);
             // 
             // btnSearchbtn
             // 
@@ -2614,16 +3032,15 @@
             this.axCTISrv.outTrunkCall += new AxwpCTIOcx.@__CTISrv_outTrunkCallEventHandler(this.axCTISrv_outTrunkCall);
             this.axCTISrv.otherIDTisInfoArrival4 += new AxwpCTIOcx.@__CTISrv_otherIDTisInfoArrival4EventHandler(this.axCTISrv_otherIDTisInfoArrival4);
             // 
-            // btnSearchAdd
+            // label22
             // 
-            this.btnSearchAdd.ForeColor = System.Drawing.Color.Black;
-            this.btnSearchAdd.Location = new System.Drawing.Point(786, 74);
-            this.btnSearchAdd.Name = "btnSearchAdd";
-            this.btnSearchAdd.Size = new System.Drawing.Size(70, 23);
-            this.btnSearchAdd.TabIndex = 3;
-            this.btnSearchAdd.Text = "添加";
-            this.btnSearchAdd.UseVisualStyleBackColor = true;
-            this.btnSearchAdd.Click += new System.EventHandler(this.btnSearchAdd_Click);
+            this.label22.AutoSize = true;
+            this.label22.ForeColor = System.Drawing.Color.Red;
+            this.label22.Location = new System.Drawing.Point(259, 28);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(11, 12);
+            this.label22.TabIndex = 100;
+            this.label22.Text = "*";
             // 
             // picWithTitle1
             // 
@@ -2893,10 +3310,11 @@
             this.panel10.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.pnlCall.ResumeLayout(false);
-            this.pnlCallFill.ResumeLayout(false);
-            this.pnlCallTop.ResumeLayout(false);
-            this.pnlCallTop.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvCall)).EndInit();
+            this.panel12.ResumeLayout(false);
+            this.panel12.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel11.ResumeLayout(false);
+            this.panel11.PerformLayout();
             this.tabPage3.ResumeLayout(false);
             this.pnlCustomer.ResumeLayout(false);
             this.pnlCusFill.ResumeLayout(false);
@@ -2992,24 +3410,6 @@
         private Plug.PicWithTitle picWithTitle10;
         private Plug.PicWithTitle picWithTitle11;
         private System.Windows.Forms.Panel pnlAnswer;
-        private System.Windows.Forms.Panel pnlCallFill;
-        private System.Windows.Forms.DataGridView dgvCall;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 电话号码;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 呼叫时间;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 客户姓名;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 呼叫主题;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 内容备注;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 是否通话成功;
-        private System.Windows.Forms.Panel pnlCallTop;
-        private System.Windows.Forms.Button btnCallAdd;
-        private System.Windows.Forms.Button btnCallSearch;
-        private System.Windows.Forms.Button btnCallPlan;
-        private System.Windows.Forms.DateTimePicker dtpCallTime2;
-        private System.Windows.Forms.Label lblCallTime2;
-        private System.Windows.Forms.DateTimePicker dtpCallTime1;
-        private System.Windows.Forms.Label lblCallTime1;
-        private System.Windows.Forms.TextBox txtCallPhone;
-        private System.Windows.Forms.Label lblCallPhone;
         private System.Windows.Forms.Panel pnlCustomer;
         private System.Windows.Forms.Panel pnlCusFill;
         private System.Windows.Forms.DataGridView dgvCust;
@@ -3215,5 +3615,59 @@
         private System.Windows.Forms.Panel pnldgvTemp;
         private System.Windows.Forms.DataGridView dgvImportTemp;
         private System.Windows.Forms.Button btnSearchAdd;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.RichTextBox rtbCallRemark;
+        private System.Windows.Forms.Button btn11;
+        private System.Windows.Forms.Button btn7;
+        private System.Windows.Forms.Button btn3;
+        private System.Windows.Forms.Button btn10;
+        private System.Windows.Forms.Button btn6;
+        private System.Windows.Forms.Button btn9;
+        private System.Windows.Forms.Button btn2;
+        private System.Windows.Forms.Button btn5;
+        private System.Windows.Forms.Button btn8;
+        private System.Windows.Forms.Button btn1;
+        private System.Windows.Forms.Button btn4;
+        private System.Windows.Forms.Button btn0;
+        private System.Windows.Forms.Panel panel11;
+        private System.Windows.Forms.Label lblCallDailError;
+        private System.Windows.Forms.Button btnCallDail;
+        private System.Windows.Forms.TextBox txtCallDailPhone;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Panel panel12;
+        private System.Windows.Forms.DateTimePicker dtpCallEntryDate;
+        private System.Windows.Forms.Label lblCallError;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.RichTextBox rtbCallContent;
+        private System.Windows.Forms.ComboBox cmbCallProvice;
+        private System.Windows.Forms.ComboBox cmbCallSource;
+        private System.Windows.Forms.ComboBox cmbCallSex;
+        private System.Windows.Forms.ComboBox cmbCallArea;
+        private System.Windows.Forms.TextBox txtCallCustName;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.TextBox txtCallJob;
+        private System.Windows.Forms.TextBox txtCallProduce;
+        private System.Windows.Forms.TextBox txtCallEmail;
+        private System.Windows.Forms.TextBox txtCallPhone;
+        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.Label label37;
+        private System.Windows.Forms.Label label38;
+        private System.Windows.Forms.Label label39;
+        private System.Windows.Forms.Label label41;
+        private System.Windows.Forms.Label label42;
+        private System.Windows.Forms.Button btnClearDetail;
+        private System.Windows.Forms.Button btnCallDetailSave;
+        private System.Windows.Forms.Label label22;
     }
 }
