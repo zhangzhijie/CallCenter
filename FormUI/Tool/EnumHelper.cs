@@ -157,10 +157,7 @@ namespace FormUI.Tool
             ForceInsert = 3,
 
             [Description("强拆")]
-            BreakLine = 4,
-
-            [Description("通话详细")]
-            Details = 5,
+            BreakLine = 4
         }
 
         public static string GetDescript(Enum penum)

@@ -97,6 +97,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StaticConst.cs" />
     <Compile Include="VModel\VCallCust.cs" />
+    <Compile Include="VModel\VCallLog.cs" />
     <Compile Include="VModel\VManagerPwd.cs" />
     <Compile Include="VModel\VManagerSel.cs" />
     <Compile Include="VModel\VModel_AccountIncome.cs" />

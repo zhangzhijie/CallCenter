@@ -97,10 +97,6 @@ namespace FormUI
             {
                 TransferFunc();
             }
-            else if (toolItem.Name == Ad.Util.Const.OtherContextMenuPrefix + (int)EnumHelper.OtherContextMenuEnum.Details)
-            {
-                AnswerOtherDetailFunc();
-            }
             else if (toolItem.Name == Ad.Util.Const.OtherContextMenuPrefix + (int)EnumHelper.OtherContextMenuEnum.ForceInsert)
             {
                 ForceInsertFunc();
@@ -135,7 +131,9 @@ namespace FormUI
         // 通话详细
         private void AnswerSelfDetailFunc()
         {
-
+            FCallLog fCallLog = new FCallLog();
+            fCallLog.Owner = this;
+            fCallLog.ShowDialog();
         }
 
         // 注销
@@ -162,33 +160,28 @@ namespace FormUI
             this.axCTISrv.cmdDial(AnswerHelper.CurrentChannelId, AnswerHelper.SelectedTelControl.LblSeatText);
         }
 
-        // 通话详细
-        private void AnswerOtherDetailFunc()
-        {
-        }
-
         // 强制插入
         private void ForceInsertFunc()
         {
-
+            this.axCTISrv.cmdDial(AnswerHelper.CurrentChannelId, AppSetting.ForcedInsert + AnswerHelper.SelectedTelControl.LblSeatText);
         }
 
         // 代接
         private void InsteadAnswerFunc()
         {
-
+            this.axCTISrv.cmdDial(AnswerHelper.CurrentChannelId, AppSetting.ExtensionAnswer + AnswerHelper.SelectedTelControl.LblSeatText);
         }
 
         // 监听
         private void MonitorFunc()
         {
-
+            this.axCTISrv.cmdDial(AnswerHelper.CurrentChannelId, AppSetting.ForcedInsert + AnswerHelper.SelectedTelControl.LblSeatText);
         }
 
         // 强断
         private void BreakLineFunc()
         {
-
+            this.axCTISrv.cmdDial(AnswerHelper.CurrentChannelId, AppSetting.ForcedHangUp + AnswerHelper.SelectedTelControl.LblSeatText);
         }
         #endregion
 
@@ -223,7 +216,6 @@ namespace FormUI
             if (!LoginHelper.IsHasFunction(EnumHelper.FunctionEnum.Special))
             {
                 this.cmsOther.Items.RemoveByKey(Ad.Util.Const.OtherContextMenuPrefix + (int)EnumHelper.OtherContextMenuEnum.Monitor);
-                this.cmsOther.Items.RemoveByKey(Ad.Util.Const.OtherContextMenuPrefix + (int)EnumHelper.OtherContextMenuEnum.Details);
                 this.cmsOther.Items.RemoveByKey(Ad.Util.Const.OtherContextMenuPrefix + (int)EnumHelper.OtherContextMenuEnum.ForceInsert);
                 this.cmsOther.Items.RemoveByKey(Ad.Util.Const.OtherContextMenuPrefix + (int)EnumHelper.OtherContextMenuEnum.BreakLine);
 
@@ -642,8 +634,14 @@ namespace FormUI
             entity.Email = this.txtCallEmail.Text.Trim();
             entity.EntryDate = DateTime.Now;
             entity.Job = this.txtCallJob.Text;
-            entity.Phone = phoneStr;
-            entity.Tel = this.txtCallPhone.Text;
+            if (isMobile)
+            {
+                entity.Phone = phoneStr;
+            }
+            else
+            {
+                entity.Tel = phoneStr;
+            }
             entity.Product = this.txtCallProduce.Text.Trim();
             entity.ProvinceId = (long)this.cmbCallProvice.SelectedValue;
             entity.Province = this.cmbCallProvice.Text;
