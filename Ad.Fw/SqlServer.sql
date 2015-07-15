@@ -249,19 +249,20 @@ go
 
 
 /*==============================================================*/
-/* View: Y_V_Manager                                            */
+/* View: Y_V_Dept_Position                                      */
 /*==============================================================*/
-create view Y_V_Manager as
-select A.*,B.NAME as UserName from Y_Manager 
-left join ORG_MEMBER B on A.ManagerId = B.ID
+create view Y_V_Dept_Position as
+select A.*,B.DepartName,B.Code as DepartCode,C.PostName
+from Y_Dept_Position A,Y_Department B,Y_Position C
+where A.PostId = C.PostId and A.DepartId = B.DepartId
 go
 
-
 /*==============================================================*/
 /* View: Y_V_Manager                                            */
 /*==============================================================*/
 create view Y_V_Manager as
-select A.*,B.NAME,C.PostId,C.DepartId,C.DepartCode,C.PostName,C.DepartName as UserName from Y_Manager A
+select A.*,B.NAME,C.PostId,C.DepartId,C.DepartCode,C.PostName,C.DepartName as DepartName from Y_Manager A
 left join ORG_MEMBER B on A.ManagerId = B.ID
 left join Y_V_Dept_Position C on A.PermissionId = C.PermissionId
 go
+
