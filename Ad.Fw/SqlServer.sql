@@ -10,6 +10,7 @@ create table Y_Call_Cust (
    EntryDate            datetime             not null,
    CustCode             varchar(12)          not null,
    CustName             varchar(50)          not null,
+   AreaId               bigint               not null,
    Area                 varchar(50)          not null,
    Province             nvarchar(255)        not null,
    ProvinceId           bigint               not null,
